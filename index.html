@@ -7,54 +7,61 @@
     <title>Clone</title>
     <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/vendors/css/grid.css">
-    <link rel="stylesheet" href="/resources/css/style.css">
+    <link rel="stylesheet" href="./vendors/css/grid.css">
+    <link rel="stylesheet" href="./resources/css/style.css">
     <script src="https://kit.fontawesome.com/75880fc01e.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <header>
-        <a href="#">
-            <i class="fab fa-evernote"></i>
-            <h1>Evernote</h1>
-        </a>
-        <ul class="nav-bar">
-            <li><a href="#">PLANS</a></li>
-            <li><a href="#">FEATURES</a></li>
-            <li><a href="#">HELP & LEARNING</a></li>
-            <li><a href="#">ABOUT US</a></li>
-        </ul>
-        <a href="">Download</a> or <a href="">Log in</a>
+    <header class="e-container">
+        <div class="logo">
+            <a href="#">
+                <i class="fab fa-evernote fa-4x logo"></i>
+                <h1>Evernote</h1>
+            </a>
+        </div>
+        <div class="nav-bar">
+            <ul class="nav-bar">
+                <li><a href="https://www.google.com/">PLANS</a></li>
+                <li><a href="#">FEATURES</a></li>
+                <li><a href="#">HELP & LEARNING</a></li>
+                <li><a href="#">ABOUT US</a></li>
+            </ul>
+        </div>
+        <div class="corner-down-log">
+            <a class="button-link white-button" href="">Download</a>
+            <span>or</span>
+            <a class="button-link borderless-button" href="">Log in</a>
+        </div>
     </header>
 
-    <section id="discount">
-        <a href="">
-            <img src="" alt="discount-logo">
-            <h3>Save 40% on Evernote Premium. Expires 9/16.</h3>
-            <a href="">GET PREMIUM</a>
-        </a>
+    <section id="discount" class="e-container">
+        <img src="https://cdn3.iconfinder.com/data/icons/popular-services-brands/512/evernote-512.png"
+            alt="discount-logo">
+        <h3>Save 40% on Evernote Premium. Expires 9/16.</h3>
+        <a href="#" class="button-link green-button">GET PREMIUM</a>
     </section>
-    <section id="your-note">
-        <div class="section group">
+    <section id="your-note" class="e-container">
+        <div class="section group left-side">
             <div class="col span_6_of_12">
-                <h3>Your notes. Organized. Effortless.</h3>
+                <h2>Your notes. <br> Organized. <br> Effortless.</h2>
                 <p>
                     Take notes anywhere. Find information faster. Share ideas with anyone. Meeting notes, web pages,
                     projects,
                     to-do lists—with Evernote as your note taking app, nothing falls through the cracks.
                 </p>
-                <a href="">SIGN UP FOR FREE</a>
+                <a href="" class="button-link green-button">SIGN UP FOR FREE</a>
             </div>
-            <div class="col span_6_of_12">
+            <div class="col span_6_of_12 right-side">
                 <img src="https://evernote.com/c/assets/homepage/homepage-hero-desktop.png?cfa2c53e09b1636d"
                     alt="main-image">
             </div>
         </div>
 
     </section>
-    <section id="focus-on">
+    <section id="focus-on" class="e-container grey-part e-group">
         <img src="https://evernote.com/c/assets/homepage/homepage-focus.png?e73ee11d48ca9ebe" alt="">
-        <h3>Focus on what matters most</h3>
+        <h2>Focus on what matters most</h2>
         <div class="section group">
             <div class="col span_4_of_12">
                 <p>Manage everything from big projects to personal moments.</p>
@@ -67,46 +74,46 @@
             </div>
         </div>
     </section>
-    <section id="group-slogan">
+    <section id="group-slogan" class="e-container e-group">
         <div id="at-work">
             <img src="https://evernote.com/c/assets/homepage/homepage-mask.png?f578203f29d4c0ba" alt="">
-            <h4>At work, at home, and everywhere in between</h4>
+            <h2>At work, at home, and everywhere in between</h2>
             <p>Evernote’s plans and pricing are designed to fit your needs.</p>
         </div>
         <div class="section group">
-            <div class="col span_6_of_12">
-                <h4>Remember everything important</h4>
+            <div class="col span_6_of_12 description">
+                <h3>Remember everything important</h3>
                 <p>A single place for your notes, ideas, lists and reminders.</p>
                 <a href="#">EVERNOTE BASIC →</a>
             </div>
-            <div class="col span_6_of_12">
+            <div class="col span_6_of_12 desimg">
                 <img src="https://evernote.com/c/assets/homepage/homepage-remember-everything.png?9e6af1b1283e3e70"
                     alt="">
             </div>
         </div>
-        <div class="section group">
+        <div class="section group desimg">
             <div class="col span_6_of_12">
                 <img src="https://evernote.com/c/assets/homepage/assets/multi-devices.png?586481fdd8c3dc64" alt="">
             </div>
-            <div class="col span_6_of_12">
-                <h4>Stay organized, wherever you are</h4>
+            <div class="col span_6_of_12 description">
+                <h3>Stay organized, wherever you are</h3>
                 <p>Plan, keep records, and manage projects from any device–even offline.</p>
                 <a href="#">EVERNOTE PREMIUM →</a>
             </div>
         </div>
         <div class="section group">
-            <div class="col span_6_of_12">
-                <h4>Collaborate with your team</h4>
+            <div class="col span_6_of_12 description">
+                <h3>Collaborate with your team</h3>
                 <p>Manage projects, deadlines, clients, and meetings with ease.</p>
                 <a href="#">EVERNOTE BUSINESS →</a>
             </div>
-            <div class="col span_6_of_12">
+            <div class="col span_6_of_12 desimg">
                 <img src="https://evernote.com/c/assets/homepage/empty_space.svg?3ff53a2e038dccee" alt="">
             </div>
         </div>
-        <a href="#">COMPARE EVERNOTE PLANS</a>
+        <a href="#" class="button-link green-button">COMPARE EVERNOTE PLANS</a>
     </section>
-    <section id="how-it-works">
+    <section id="how-it-works" class="e-container grey-part e-group">
         <h2>How It Works</h2>
         <div class="section group">
             <div class="col span_3_of_12">
@@ -133,10 +140,9 @@
                 <p>Manage projects, take meeting notes, set reminders, and edit documents.</p>
             </div>
         </div>
-        <a href="">START YOUR FREE TRIAL</a>
+        <a href="" class="button-link green-button">START YOUR FREE TRIAL</a>
     </section>
-
-    <section id="popular-features">
+    <section id="popular-features" class="e-container e-group">
         <h2>Popular Features</h2>
         <div class="section group">
             <div class="col span_4_of_12">
@@ -185,36 +191,40 @@
             </div>
         </div>
     </section>
-    <section id="sign-up">
+    <section id="sign-up" class="e-container green-part e-group">
         <div class="section group">
-            <div class="col span_6_of_12">
+            <div class="col span_6_of_12 left-side">
                 <h2>Sign up for Evernote Today</h2>
                 <p>Capture ideas and inspiration from anywhere and manage tasks with ease.</p>
             </div>
-            <div class="col span_6_of_12">
-                <a href="">Sign up free with Google</a>
-                <br>
-                or
-                <br>
+            <div class="col span_6_of_12 right-side">
+                <a href="" class="button-link borderless-button gg-sign-up">
+                    <i class="fab fa-google"></i>
+                    <span>Sign up free with Google</span></a>
+                <div id="or">
+                    or
+                </div>
                 <form>
                     <input type="email" name="" id="" placeholder="Email">
                     <input type="email" name="" id="" placeholder="Password">
                     <p>By clicking below, I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy
                             Policy</a>.</p>
-                    <input type="submit" value="SIGN UP FOR FREE">
+                    <input type="submit" value="SIGN UP FOR FREE" class="button-link borderless-button">
                 </form>
             </div>
         </div>
     </section>
-    <footer>
-        <a href="#">
-            <i class="fab fa-evernote"></i>
-            <h1>Evernote</h1>
-        </a>
-        <hr>
-        <div class="section group">
+    <footer class="e-container">
+        <div class="logo">
+            <a href="#">
+                <i class="fab fa-evernote fa-4x logo"></i>
+                <h1>Evernote</h1>
+            </a>
+        </div>
+        <hr class="hr-thick">
+        <div class="section group link">
             <div class="col span_2_of_12">
-                <h5>PRODUCT</h5>
+                <h4>PRODUCT</h4>
                 <ul>
                     <li><a href="#">Why Evernote</a></li>
                     <li><a href="#">Evernote Basic</a></li>
@@ -226,7 +236,7 @@
                 </ul>
             </div>
             <div class="col span_2_of_12">
-                <h5>FEATURES</h5>
+                <h4>FEATURES</h4>
                 <ul>
                     <li><a href="#">Web Clipper</a></li>
                     <li><a href="#">Templates</a></li>
@@ -240,7 +250,7 @@
                 </ul>
             </div>
             <div class="col span_2_of_12">
-                <h5>COMMUNITY</h5>
+                <h4>COMMUNITY</h4>
                 <ul>
                     <li><a href="#">Our Community</a></li>
                     <li><a href="#">Certified Consultants</a></li>
@@ -251,7 +261,7 @@
                 </ul>
             </div>
             <div class="col span_2_of_12">
-                <h5>SUPPORT</h5>
+                <h4>SUPPORT</h4>
                 <ul>
                     <li><a href="#">Help & Learning</a></li>
                     <li><a href="#">Troubleshooting</a></li>
@@ -259,21 +269,24 @@
                 </ul>
             </div>
             <div class="col span_2_of_12">
-                <h5>COMPANY</h5>
+                <h4>COMPANY</h4>
                 <ul>
                     <li><a href="#">About Us</a></li>
                     <li><a href="#">Careers</a></li>
                     <li><a href="#">Contact Us</a></li>
                 </ul>
             </div>
-            <div class="col span_2_of_12">
-                <a href="#">Sign up</a> or <a href="#">Login</a>
+            <div class="col span_2_of_12 account-col">
+                <a href="#" class="button-link borderless-button">Sign up</a>
+                or
+                <a href="#" class="button-link white-button">Log in</a>
             </div>
         </div>
-        <div class="section group">
-            <div class="col span_6_of_12">
+
+        <div class="section group language-social">
+            <div class="col span_6_of_12 language">
                 <form>
-                    <label>Choose a languege:</label>
+                    <label>Choose a language:</label>
                     <select>
                         <option>English (US)</option>
                         <option>English (UK)</option>
@@ -281,22 +294,22 @@
                     </select>
                 </form>
             </div>
-            <div class="col span_6_of_12">
-                <i class="fab fa-facebook-f"></i>
-                <i class="fab fa-twitter"></i>
-                <i class="fab fa-instagram"></i>
-                <i class="fab fa-youtube"></i>
-                <i class="fab fa-linkedin-in"></i>
+            <div class="col span_6_of_12 social">
+                <a href=""><i class="fab fa-facebook-f"></i></a>
+                <a href=""><i class="fab fa-twitter"></i></a>
+                <a href=""><i class="fab fa-instagram"></i></a>
+                <a href=""><i class="fab fa-youtube"></i></a>
+                <a href=""><i class="fab fa-linkedin-in"></i></a>
             </div>
         </div>
         <hr>
-        <div class="section group">
-            <div class="col span_6_of_12">
+        <div class="section group credit-quick-link">
+            <div class="col span_6_of_12 credit">
                 <p>
                     © 2020 Evernote Corporation. All rights reserved.
                 </p>
             </div>
-            <div class="col span_6_of_12">
+            <div class="col span_6_of_12 quick-link">
                 <a href="#">Security</a>
                 <a href="#">Legal</a>
                 <a href="#">Privacy</a>

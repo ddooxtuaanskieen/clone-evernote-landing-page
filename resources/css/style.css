@@ -1,9 +1,411 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Lato';
 }
-body{
-    margin: 0 80px;
+
+/* ================================================== */
+/* ====================REUSABLE==================== */
+.e-container {
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+
+.e-unstyled-list {
+    list-style-type: none;
+}
+
+.button-link {
+    padding: 16px 2rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border: 2px solid;
+    border-radius: 4%;
+    font-weight: 700;
+}
+
+.white-button,
+.borderless-button {
+    background-color: #ffffff;
+    color: #00a82d;
+}
+
+.white-button:hover,
+.borderless-button:hover {
+    color: #14CC45;
+}
+
+.white-button {
+    border-color: #00a82d;
+}
+
+.borderless-button {
+    border: none;
+}
+
+.green-button {
+    background-color: #00a82d;
+    color: #ffffff;
+    border-color: #00a82d;
+}
+
+.green-button:hover {
+    background-color: #14CC45;
+    border-color: #14CC45;
+}
+
+.grey-part {
+    background-color: rgb(238, 238, 238);
+}
+
+.green-part {
+    background-color: #00a82d;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo a {
+    display: inline-block;
+    height: 100%;
+}
+
+.logo i {
+    color: #00a82d;
+}
+
+.logo h1 {
+    display: inline-block;
+    height: 100%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3rem;
+    color: #000000;
+}
+.e-group{
+    text-align: center;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+/* ================================================== */
+a {
+    text-decoration: none;
+}
+.e-group h2{
+    font-size: 3rem;
+    padding-top: 4rem;
+}
+
+header,
+#discount {
+    height: 6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .button-link{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+header .borderless-button{
+    padding-left: 0;
+    padding-right: 0;
+}
+header .nav-bar {
+    width: 40rem;
+}
+
+header ul {
+    list-style-type: none;
+    display: flex;
+}
+
+header ul li a {
+    font-weight: 700;
+    color: #000000;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+header ul li a:hover {
+    color: #00a82d;
+}
+
+#discount {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 0 6rem;
+}
+
+#discount img {
+    height: 4rem;
+    width: auto;
+}
+#discount h3{
+    display: inline-block;
+    width: 600px;
+    text-align: left;
+    flex-grow: 1;
+    margin-left: 4rem;
+}
+
+#your-note{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+#your-note .left-side h2{
+    font-size: 60px;
+    margin-bottom: 2rem;
+}
+#your-note .left-side p{
+    font-size: 25px;
+    margin-bottom: 2rem;
+}
+#your-note .right-side{
+    display: flex;
+    align-items: center;
+}
+#your-note img{
+    height: 23rem;
+}
+#focus-on .col{
+    padding-top: 4rem;
+    padding-left: 10px;
+    padding-right: 1rem;
+}
+#focus-on .col p{
+    color: #818181;
+    font-size: 2rem;
+    text-align: center ;
+    line-height: 4rem;
+    margin-top: 3rem;
+}
+#group-slogan .button-link{
+    margin-top: 4rem;
+}
+#group-slogan .col{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+#group-slogan #at-work p{
+    font-size: 25px;
+    padding-bottom: 6rem;
+    padding-top: 2rem;
+}
+#group-slogan .desimg img{
+    height: 20rem;
+}
+#group-slogan .description{
+    text-align: left;
+}
+#group-slogan .description h3{
+    color: #00a82d;
+    font-size: 35px;
+    padding-right: 10rem;
+}
+#group-slogan .description p{
+    padding: 2rem 0;
+    font-size: 25px;
+}
+#group-slogan .description a{
+    color: #00a82d;
+    font-weight: 700;
+}
+#group-slogan .description a:hover{
+    color: #14CC45;
+}
+#how-it-works .col{
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+#how-it-works .col h4{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+#how-it-works .col p{
+    font-size: 20px;
+}
+
+#popular-features{
+    padding-left: 6rem;
+    padding-right: 6rem;
+}
+#popular-features h2{
+    padding-bottom: 4rem;
+}
+#popular-features .col{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    color: #000000;
+}
+#popular-features .col h4{
+    color: #000000;
+}
+#sign-up{
+    color: #ffffff;
+}
+
+#sign-up .left-side {
+    /* padding-left: 0;
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; */
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+}
+#sign-up .left-side h2{
+    padding: 0;
+    padding-bottom: 2rem;
+    padding-left: 0;
+    margin-left: 0;
+    text-align: left;
+    font-size: 40px;
+}
+#sign-up .left-side p{
+    font-size: 20px;
+    text-align: left;
+    padding-right: 5rem;
+}
+#sign-up .right-side{
+    /* text-align: right; */
+    padding-left: 15rem;
+}
+#sign-up .right-side #or{
+    padding: 1rem 0;
+    text-transform: uppercase;
+}
+#sign-up .right-side .button-link,input{
+    width: 100%;
+}
+#sign-up .right-side .button-link{
+    width: 100%;
+    font-size: 1rem;
+}
+#sign-up .right-side input{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-left: 15px;
+    height: 4rem;
+    border-radius: 4%;
+    border-color: #ffffff;
+    font-size: 20px;
+}
+#sign-up .right-side p{
+    font-size: 14px;
+    text-align: justify;
+    padding: 1rem 0;
+}
+#sign-up .right-side p a{
+    color: #ffffff;
+    font-weight: 700;
+}
+#sign-up .right-side p a:hover{
+    text-decoration: underline;
+}
+#sign-up .right-side .gg-sign-up{
+    text-align: left;
+    color: #000000;
+    font-weight: normal;
+}
+#sign-up .right-side .gg-sign-up i{
+    padding: 0 1rem;
+}
+
+footer {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+footer .logo {
+    margin-bottom: 1rem;
+}
+footer hr.hr-thick{
+    border: 2px solid #000000;
+}
+
+footer .link {
+    margin-top: 1rem;
+    margin-bottom: 25px;
+}
+
+footer .link li,
+h4 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+footer .link h4 {
+    margin-top: 5px;
+}
+
+footer .link li {
+    list-style: none;
+}
+
+footer .link a {
+    color: #000000;
+    font-size: 14px;
+}
+
+footer .link a:hover {
+    color: #00a82d;
+}
+footer .col.account-col a{
+    color: #00a82d;
+}
+footer .col.account-col .button-link{
+    margin-left: 4px;
+    margin-right: 4px;
+}
+footer .col.account-col .borderless-button{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+footer .language-social,.credit-quick-link{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+footer .language,
+.credit,
+.quick-link {
+    font-size: 12px;
+}
+
+footer .language {
+    font-weight: 700;
+}
+footer .language select {
+    border: 0px;
+    outline: 0px;
+}
+
+footer .social,.quick-link{
+    text-align: right;
+}
+footer .social i{
+    color: #000000;
+    padding-left: 3rem;
+}
+
+footer .credit,.quick-link a{
+    color: #a3a3a3;
+}
+
+footer .quick-link a {
+    margin-left: 2rem;
+    color: #a3a3a3;
+}
+footer .quick-link a:hover{
+    color: #000000;
 }
